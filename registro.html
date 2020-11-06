@@ -1,0 +1,100 @@
+ <html>
+    <head>
+     <link rel="stylesheet" type="text/css"
+              href="WEB\web\bootstrap\css\bootstrap.css">
+     <title> Formulario de registro</title>
+     
+     <style type="text/css">
+      [required]
+      {
+       box-shadow: 0 0 10px 1px #818181;
+      }
+      
+      :invalid
+      {
+       box-shadow:  10px 7px 10px 1px red;
+      }
+       *{margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+            body {
+                font-family: arial;
+             
+            }
+            .main{
+                    background-image: url("imagenes/fondo5.jpg");
+              overflow: hidden;
+              height: 100%;
+               
+            }
+            .form-login {
+                width:  400px;
+                height: 5000px;
+                background: #4e4d4d;
+                margin: auto;
+                margin-top: 100px;
+                box-shadow: 7px 13px 37px #000;
+                padding: 20px 30px;
+                border-top: 4px solid #017bab;
+                color: white;   
+            }
+             .controls{
+                width: 100%;
+                border:1px solid #017bab;
+                margin-bottom:15px;
+                padding: 11px 10px;
+                background: #252323;
+                font-size:14px;
+                font-weight: bold;
+                color: #FFFFFF;
+            }
+            .buttons {
+                width:  100%;
+                height: 40px;
+                background: #017bab;
+                border: none;
+                color: white;
+                margin-bottom:16px;
+                
+            }
+             .form-login p{
+                height:  40px;
+                text-align: center;
+                border-bottom: 1px solid;
+                color: white;
+            }
+            .form-login a{
+                color: white;
+                text-decoration:none;
+                font-size: 14px;
+            }
+            .form-login a:hover{
+                text-decoration: underline;
+            }
+     </style>
+    </head>
+    <body class="main">
+     
+     <form name="Formulario" method="post" action="validacion.php">
+      <section class="form-login">
+        <a>Ingrese sus nombres</a>
+       <input class="controls" type="text" required name="nombre" value="" placeholder="Nombre">
+        <a>Ingrese sus apellidos</a>
+       <input class="controls" type="text"  required name="apellidos" value="" placeholder="Apellidos">
+       <a>Ingrese su e-mail</a>
+       <input class="controls" type="email" required name="correo" value="" placeholder="ejemplo@dominio.com">
+       <a>Ingrese su numero de telefono</a>
+       <input class="controls" type="text" required name="telefono" value="" placeholder="10 digitos">
+       <a>Ingrese su contrase&ntilde;a</a>
+       <input class="controls" type="password" required name="contraseña" value="" placeholder="">
+              <a>Ingrese de nuevo su contrase&ntilde;a</a>
+       <input class="controls" type="password" required name="contraseña1" value="" placeholder="">
+       <input class="buttons" type="submit" name="ingresar" value="Registrar">
+       <p><a href="login.html"> Acceder a tu cuenta</a></p>
+      </section>
+     </form>
+    </body>
+    </html>
+    
+    
